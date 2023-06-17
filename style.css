@@ -45,6 +45,10 @@ body {
   ul.contact li {
     margin-bottom: 5px;
   }
+
+  .contact a {
+    font-size: 12px;
+  }
   
   .right {
     width: 70%;
