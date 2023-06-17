@@ -7,7 +7,112 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>2018219065 학번의 Home Page</h1>
-    <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white"> 
-</body>
-</html>
+  <header>
+    <h1>{{header.name}}</h1>
+    <h2>{{header.desc}}</h2>
+    <p>Email: {{header.email}}</p>
+    <p>Github: <a href="{{header.github}}">{{header.github}}</a></p>
+    <p>Blog: <a href="{{header.blog}}">{{header.blog}}</a></p>
+  </header>
+
+  <section>
+    <h2>{{intro.subject}}</h2>
+    <img src="{{intro.profile}}" alt="Profile Picture">
+    <p>{{intro.intro}}</p>
+  </section>
+
+  <section>
+    <h2>{{skills.subject}}</h2>
+    <ul>
+      {{#each skills.contents}}
+        <li>
+          <h3>{{category}}</h3>
+          <ul>
+            {{#each desc}}
+              <li>{{name}} - {{proficiency}}%</li>
+            {{/each}}
+          </ul>
+        </li>
+      {{/each}}
+    </ul>
+  </section>
+
+  <section>
+    <h2>{{experience.subject}}</h2>
+    <ul>
+      {{#each experience.contents}}
+        <li>
+          <h3>{{title}}</h3>
+          <h4>{{subtitle}}</h4>
+          <p>{{period}}</p>
+          {{#each desc}}
+            <p>{{main}}</p>
+            {{#each sub}}
+              <p>{{this}}</p>
+            {{/each}}
+          {{/each}}
+        </li>
+      {{/each}}
+    </ul>
+  </section>
+
+  <section>
+    <h2>{{projects.subject}}</h2>
+    <ul>
+      {{#each projects.contents}}
+        <li>
+          <h3>{{title}}</h3>
+          <h4>{{subtitle}}</h4>
+          <p>{{period}}</p>
+          {{#each desc}}
+            <p>{{main}}</p>
+            {{#each sub}}
+              <p>{{this}}</p>
+            {{/each}}
+          {{/each}}
+        </li>
+      {{/each}}
+    </ul>
+  </section>
+
+  <section>
+    <h2>{{awards.subject}}</h2>
+    <ul>
+      {{#each awards.contents}}
+        <li>
+          <h3>{{title}}</h3>
+          <h4>{{subtitle}}</h4>
+          <p>{{period}}</p>
+          {{#each desc}}
+            <p>{{main}}</p>
+            {{#each sub}}
+              <p>{{this}}</p>
+            {{/each}}
+          {{/each}}
+        </li>
+      {{/each}}
+    </ul>
+  </section>
+
+  <section>
+    <h2>{{research.subject}}</h2>
+    <ul>
+      {{#each research.contents}}
+        <li>
+          <h3>{{title}}</h3>
+          <h4>{{subtitle}}</h4>
+          <p>{{period}}</p>
+          {{#each desc}}
+            <p>{{main}}</p>
+            {{#each sub}}
+              <p>{{this}}</p>
+            {{/each}}
+          {{/each}}
+        </li>
+      {{/each}}
+    </ul>
+  </section>
+
+  <section>
+    <h2>{{education.subject}}</h2>
+    <ul>
